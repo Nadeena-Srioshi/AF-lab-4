@@ -68,3 +68,15 @@ console.log("promise execution")
 
 
 
+async function myFunction() { 
+  try { 
+    const result = await myPromise; 
+    console.log(result); 
+  } catch (error) { 
+    console.log(error); 
+  } 
+} 
+ 
+myFunction(); 
+
+console.log("async/await execution")
