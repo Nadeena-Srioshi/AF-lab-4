@@ -80,3 +80,29 @@ async function myFunction() {
 myFunction(); 
 
 console.log("async/await execution")
+
+
+
+const figlet = require("figlet");
+
+function figletText(text, options = {}) {
+  return new Promise((resolve, reject) => {
+    figlet.text(text, options, (err, result) => {
+      if (err) reject(err);
+      else resolve(result);
+    });
+  });
+}
+
+async function doStuff() {
+  const text = await figletText("Hungry", {
+    font: "Ghost",
+    horizontalLayout: "default",
+    verticalLayout: "default",
+    width: 80,
+    whitespaceBreak: true
+  });
+  console.log(text);
+}
+
+doStuff();
