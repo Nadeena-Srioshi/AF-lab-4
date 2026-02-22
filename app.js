@@ -49,3 +49,22 @@ console.log(myModule.myFunction());
 console.log("module execution")
 
 
+
+const myPromise = new Promise((resolve, reject) => { 
+  if (true) { 
+    resolve('Success!'); 
+  } else { 
+    reject('Failure!'); 
+  } 
+}); 
+ 
+myPromise.then((result) => { 
+  console.log(result); 
+}).catch((error) => { 
+  console.log(error); 
+}); 
+
+console.log("promise execution")
+
+
+
