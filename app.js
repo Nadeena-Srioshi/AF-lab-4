@@ -42,3 +42,10 @@ https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => {
 
 console.log("https request execution")
 
+
+const myModule = require('./my-module.js'); 
+console.log(myModule.myFunction()); 
+
+console.log("module execution")
+
+
