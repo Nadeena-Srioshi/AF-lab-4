@@ -1,0 +1,21 @@
+{
+  "name": "af-lab-4",
+  "version": "1.0.0",
+  "description": "Application framework lab 4",
+  "homepage": "https://github.com/Nadeena-Srioshi/AF-lab-4#readme",
+  "bugs": {
+    "url": "https://github.com/Nadeena-Srioshi/AF-lab-4/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nadeena-Srioshi/AF-lab-4.git"
+  },
+  "license": "ISC",
+  "author": "Nadeena Srioshi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  }
+}
