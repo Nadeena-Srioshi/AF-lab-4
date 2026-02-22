@@ -5,3 +5,11 @@ console.log(data);
 }); 
 
 console.log("read file execution")
+
+fs.writeFile('file.txt', 'Hello World!', function (err) { 
+  if (err) throw err; 
+  console.log('File saved!'); 
+}); 
+
+console.log("write file execution")
+
